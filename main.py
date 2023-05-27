@@ -29,10 +29,9 @@ for counter, item in enumerate(a):
         pass
 
 #   Making sure today is a market day
-start = dt.date(2023, 5, 26)  # dt.date.today()
+start = dt.date.today()
 print(start)
 
-#   Instead of this day checker, find "start" in the nyse list, then go -2 in the index and have that be the end date. problem solved!
 if start not in dtNyseFormat:
     print("Not a market day! See you next time!")
     quit()
